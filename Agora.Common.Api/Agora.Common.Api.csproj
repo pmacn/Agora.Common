@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Agora.Common.Contracts\Agora.Common.Contracts.csproj" />
+    <PackageReference Include="Agora.Common.Contracts" Version="0.1.0" />
   </ItemGroup>
 
 </Project>
