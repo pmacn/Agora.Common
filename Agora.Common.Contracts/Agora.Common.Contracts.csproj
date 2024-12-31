@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
 	<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	<Version>0.1.0</Version>
+	<Version>0.1</Version>
 	<Authors>Peter Karlsson</Authors>
 	<Description>Defines cross-service communication contracts, including DTOs, domain events, and utilities.</Description>
 	<PackageTags>Agora Common Contracts</PackageTags>

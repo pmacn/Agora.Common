@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
 	<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	<Version>0.1.0</Version>
+	<Version>0.1</Version>
 	<Authors>Peter Karlsson</Authors>
 	<Description>Entity Framework Core integration, providing repositories, unit of work patterns, and domain event support.</Description>
 	<PackageTags>Agora Common EFCore</PackageTags>

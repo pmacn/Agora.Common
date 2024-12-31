@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
 	<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	<Version>0.1.0</Version>
+	<Version>0.1</Version>
 	<Authors>Peter Karlsson</Authors>
 	<Description>Core domain library for implementing Domain-Driven Design patterns like aggregates, entities, and value objects.</Description>
 	<PackageTags>Agora Common Domain</PackageTags>

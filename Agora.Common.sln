@@ -32,6 +32,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{CC
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GithubWorkflows", "GithubWorkflows", "{25A9289F-4368-46E2-9593-1A46F8837C3B}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\publish-api.yml = .github\workflows\publish-api.yml
+		.github\workflows\publish-contracts.yml = .github\workflows\publish-contracts.yml
+		.github\workflows\publish-domain.yml = .github\workflows\publish-domain.yml
+		.github\workflows\publish-efcore.yml = .github\workflows\publish-efcore.yml
+		.github\workflows\publish.yml = .github\workflows\publish.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

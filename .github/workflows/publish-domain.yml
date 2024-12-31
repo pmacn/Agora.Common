@@ -9,32 +9,8 @@ on:
       - 'Agora.Common.Domain/**'
 
 jobs:
-  publish:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: '8.0.x'
-
-      - name: Restore dependencies
-        run: dotnet restore
-
-      - name: Build project
-        run: dotnet build Agora.Common.Domain/Agora.Common.Domain.csproj --configuration Release --no-restore
-
-      - name: Run unit tests
-        run: dotnet test Agora.Common.Domain.Tests/Agora.Common.Domain.Tests.csproj --configuration Release --no-build --verbosity normal
-
-      - name: Pack project
-        run: dotnet pack Agora.Common.Domain/Agora.Common.Domain.csproj --configuration Release --no-build --output ./nupkgs
-
-      - name: Publish package
-        run: |
-          for package in ./nupkgs/*.nupkg; do
-            dotnet nuget push $package --api-key ${{ secrets.NUGET_API_KEY }} --source https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json --skip-duplicate
-          done
+  call-reusable-workflow:
+    uses: ./.github/workflows/publish.yml
+    with:
+      project-path: Agora.Common.Domain/Agora.Common.Domain.csproj
+      test-path: Agora.Common.Domain.Tests/Agora.Common.Domain.Tests.csproj
