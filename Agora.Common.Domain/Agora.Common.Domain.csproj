@@ -4,7 +4,13 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-	  <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+	<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<Version>0.1.0</Version>
+	<Authors>Peter Karlsson</Authors>
+	<Description>Core domain library for implementing Domain-Driven Design patterns like aggregates, entities, and value objects.</Description>
+	<PackageTags>Agora Common Domain</PackageTags>
+	<RepositoryUrl>https://github.com/pmacn/Agora.Common</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>

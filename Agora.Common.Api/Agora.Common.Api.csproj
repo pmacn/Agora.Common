@@ -4,6 +4,12 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<Version>0.1.0</Version>
+	<Authors>Peter Karlsson</Authors>
+	<Description>Provides base API components, including controllers and exception handling, for Agora microservices.</Description>
+	<PackageTags>Agora Common API</PackageTags>
+	<RepositoryUrl>https://github.com/pmacn/Agora.Common</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
