@@ -24,12 +24,13 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Add GitHub Packages Source
-        run: dotnet nuget add source \
-          --username pmacn \
-          --password ${{ secrets.NUGET_API_KEY }} \
-          --store-password-in-clear-text \
-          --name github \
-          https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
+        run: |
+          dotnet nuget add source \
+            https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json \
+            --name github \
+            --username pmacn \
+            --password ${{ secrets.NUGET_API_KEY }} \
+            --store-password-in-clear-text
 
       - name: Restore dependencies
         run: dotnet restore
