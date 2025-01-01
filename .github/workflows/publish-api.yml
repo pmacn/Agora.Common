@@ -4,9 +4,15 @@ on:
   push:
     paths:
       - 'Agora.Common.Api/**'
+      - 'Agora.Common.Api.Tests/**'
+      - '.github/workflows/publish-api.yml'
+      - '.github/workflows/reusable-publish.yml'
   pull_request:
     paths:
       - 'Agora.Common.Api/**'
+      - 'Agora.Common.Api.Tests/**'
+      - '.github/workflows/publish-api.yml'
+      - '.github/workflows/reusable-publish.yml'
 
 jobs:
   call-reusable-workflow:
