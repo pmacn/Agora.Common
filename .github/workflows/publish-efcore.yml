@@ -6,13 +6,13 @@ on:
       - 'Agora.Common.EFCore/**'
       - 'Agora.Common.EFCore.Tests/**'
       - '.github/workflows/publish-api.yml'
-      - '.github/workflows/reusable-publish.yml'
+      - '.github/workflows/publish.yml'
   pull_request:
     paths:
       - 'Agora.Common.EFCore/**'
       - 'Agora.Common.EFCore.Tests/**'
       - '.github/workflows/publish-api.yml'
-      - '.github/workflows/reusable-publish.yml'
+      - '.github/workflows/publish.yml'
 
 jobs:
   call-reusable-workflow:

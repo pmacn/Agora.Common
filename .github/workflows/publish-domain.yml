@@ -6,13 +6,13 @@ on:
       - 'Agora.Common.Domain/**'
       - 'Agora.Common.Domain.Tests/**'
       - '.github/workflows/publish-api.yml'
-      - '.github/workflows/reusable-publish.yml'
+      - '.github/workflows/publish.yml'
   pull_request:
     paths:
       - 'Agora.Common.Domain/**'
       - 'Agora.Common.Domain.Tests/**'
       - '.github/workflows/publish-api.yml'
-      - '.github/workflows/reusable-publish.yml'
+      - '.github/workflows/publish.yml'
 
 jobs:
   call-reusable-workflow:
